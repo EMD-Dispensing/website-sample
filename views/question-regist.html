@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>薬局質問管理システム</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="top-title">
+            <h2>質問を登録</h2>
+        </div>
+
+        <div class="regist-item-container">
+            <div class="regist-item">
+                <label for="description">質問の概要</label>
+                <input id="description" required>
+            </div>
+            <div class="regist-item">
+                <label for="text">テキスト</label>
+                <textarea id="text" required></textarea>
+            </div>
+            <div class="regist-item">
+                <label for="format">質問形式</label>
+                <select>
+                    <option>選択してください</option>
+                    <option>自由入力</option>
+                    <option>単一選択</option>
+                    <option>複数選択</option>
+                </select>
+            </div>
+            <div class="regist-item">
+                <label for="add-question">追加質問の有無</label>
+                <select>
+                    <option>選択してください</option>
+                    <option>あり</option>
+                    <option>なし</option>
+                </select>
+            </div>
+
+            <div class="save-btn-item">
+                <button class="save-btn">保存</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+</body>
+
+</html>

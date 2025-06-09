@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>薬局質問管理システム</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="top-title">
+            <h2>ようこそ！</h2>
+            <p>このシステムでは、以下の操作が可能です</p>
+        </div>
+
+        <div class="menu-btn-container">
+            <button class="menu-btn" onclick="location.href='question-regist.html'">
+                <div class="item">
+                    <label>１</label>
+                </div>
+                <img src="../images/regist.png" class="img" />
+                <p class="btn-title">質問登録</p>
+                <p class="btn-sub-title">あたらしい質問を登録する</p>
+            </button>
+
+            <button class="menu-btn" onclick="location.href='question-management.html'">
+                <div class="item">
+                    <label>２</label>
+                </div>
+                <img src="../images/management.png" class="img" />
+                <p class="btn-title">質問管理</p>
+                <p class="btn-sub-title">登録済みの質問を管理する</p>
+            </button>
+
+            <button class="menu-btn" onclick="location.href='question-set.html'">
+                <div class="item">
+                    <label>３</label>
+                </div>
+                <img src="../images/set.png" class="img" />
+                <p class="btn-title">質問選択</p>
+                <p class="btn-sub-title">使用する質問を選択する</p>
+            </button>
+
+            <button class="menu-btn" onclick="location.href='answers.html'">
+                <div class="item">
+                    <label>４</label>
+                </div>
+                <img src="../images/set.png" class="img" />
+                <p class="btn-title">回答閲覧</p>
+                <p class="btn-sub-title">患者様の回答結果を閲覧する</p>
+            </button>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+</body>
+
+</html>

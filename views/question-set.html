@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>薬局質問管理システム</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="top-title">
+            <h2>質問を選択</h2>
+        </div>
+
+        <div class="tab-switch">
+
+            <label><input type="radio" name="TAB" checked>新規患者</label>
+            <div id="tab-conten-1" class="tab-content">
+                <div class="add-question-container">
+                    <label class="add-label">質問を追加：</label>
+                    <select class="add-select">
+                        <option>選択してください</option>
+                    </select>
+                    <button class="add-btn">追加</button>
+                </div>
+
+                <div class="question-set-container">
+                    <table>
+                        <tr>
+                            <th class="sticky">表示順</th>
+                            <th class="sticky">質問内容</th>
+                            <th class="sticky"></th>
+                        </tr>
+                        <tr>
+                            <td>１</td>
+                            <td>氏名・住所・電話番号</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>２</td>
+                            <td>性別</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>３</td>
+                            <td>身長・体重</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>４</td>
+                            <td>妊娠中・授乳中</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>５</td>
+                            <td>受診理由</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>６</td>
+                            <td>前回からの変更点</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>７</td>
+                            <td>既往歴・現病歴</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>８</td>
+                            <td>アレルギー</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>９</td>
+                            <td>副作用</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>１０</td>
+                            <td>副作用詳細</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>１１</td>
+                            <td>服用薬・サプリメント</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>１２</td>
+                            <td>生活習慣</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="save-btn-item">
+                    <button class="save-btn">保存</button>
+                </div>
+
+            </div>
+
+            <label><input type="radio" name="TAB">継続患者</label>
+            <div id="tab-conten-2" class="tab-content">
+                <div class="add-question-container">
+                    <label class="add-label">質問を追加：</label>
+                    <select class="add-select">
+                        <option>選択してください</option>
+                    </select>
+                    <button class="add-btn">追加</button>
+                </div>
+
+                <div class="question-set-container">
+                    <table>
+                        <tr>
+                            <th class="sticky">表示順</th>
+                            <th class="sticky">質問内容</th>
+                            <th class="sticky"></th>
+                        </tr>
+                        <tr>
+                            <td>１</td>
+                            <td>性別</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>２</td>
+                            <td>妊娠中・授乳中</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>３</td>
+                            <td>受診理由</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>４</td>
+                            <td>前回からの変更点</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>５</td>
+                            <td>既往歴・現病歴</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>６</td>
+                            <td>アレルギー</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>７</td>
+                            <td>副作用</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>８</td>
+                            <td>副作用詳細</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>９</td>
+                            <td>服用薬・サプリメント</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>１０</td>
+                            <td>生活習慣</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <label><input type="radio" name="TAB">久しぶりの患者</label>
+            <div id="tab-conten-3" class="tab-content">
+                <div class="add-question-container">
+                    <label class="add-label">質問を追加：</label>
+                    <select class="add-select">
+                        <option>選択してください</option>
+                    </select>
+                    <button class="add-btn">追加</button>
+                </div>
+
+                <div class="question-set-container">
+                    <table>
+                        <tr>
+                            <th class="sticky">表示順</th>
+                            <th class="sticky">質問内容</th>
+                            <th class="sticky"></th>
+                        </tr>
+                        <tr>
+                            <td>１</td>
+                            <td>性別</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>２</td>
+                            <td>妊娠中・授乳中</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>３</td>
+                            <td>受診理由</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>４</td>
+                            <td>前回からの変更点</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>５</td>
+                            <td>既往歴・現病歴</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>６</td>
+                            <td>アレルギー</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>７</td>
+                            <td>副作用</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>８</td>
+                            <td>副作用詳細</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>９</td>
+                            <td>服用薬・サプリメント</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>１０</td>
+                            <td>生活習慣</td>
+                            <td>
+                                <button>削除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- <div id="footer"></div> -->
+
+    <script>
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        // fetch("footer.html")
+        //     .then((response) => response.text())
+        //     .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+</body>
+
+</html>

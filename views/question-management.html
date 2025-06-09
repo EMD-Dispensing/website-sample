@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>薬局質問管理システム</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="top-title">
+            <h2>質問管理</h2>
+        </div>
+
+        <div class="question-list-container">
+            <table>
+                <tr>
+                    <th class="sticky">ID</th>
+                    <th class="sticky">内容</th>
+                    <th class="sticky">形式</th>
+                    <th class="sticky">追加</th>
+                    <th class="sticky">種類</th>
+                    <th class="sticky"></th>
+                </tr>
+                <tr>
+                    <td>１</td>
+                    <td>氏名・住所・電話番号</td>
+                    <td>自由入力</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>２</td>
+                    <td>性別</td>
+                    <td>単一選択</td>
+                    <td>有</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>３</td>
+                    <td>身長・体重</td>
+                    <td>自由入力</td>
+                    <td>無</td>
+                    <td>追加質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>４</td>
+                    <td>妊娠中・授乳中</td>
+                    <td>単一選択</td>
+                    <td>無</td>
+                    <td>追加質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>５</td>
+                    <td>受診理由</td>
+                    <td>自由入力</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>６</td>
+                    <td>前回からの変更点</td>
+                    <td>複数選択</td>
+                    <td>有</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>７</td>
+                    <td>既往歴・現病歴</td>
+                    <td>複数選択</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>８</td>
+                    <td>アレルギー</td>
+                    <td>複数選択</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>９</td>
+                    <td>副作用</td>
+                    <td>単一選択</td>
+                    <td>有</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>副作用詳細</td>
+                    <td>自由入力</td>
+                    <td>無</td>
+                    <td>追加質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>服用薬・サプリメント</td>
+                    <td>自由入力</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>生活習慣</td>
+                    <td>単一選択</td>
+                    <td>無</td>
+                    <td>親質問</td>
+                    <td>
+                        <button>編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+</body>
+
+</html>
